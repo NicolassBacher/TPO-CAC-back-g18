@@ -8,6 +8,9 @@ const controller = require('../controllers/viajesControllers.js')
 
 router.get('/:id', controller.showViaje)
 router.get('/', controller.show)
+router.post('/', controller.cargarViaje)
+router.put('/:id', controller.modificarViaje)
+router.delete('/:id', controller.deleteViaje)
 
 
 
