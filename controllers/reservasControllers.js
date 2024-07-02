@@ -27,7 +27,6 @@ const reservar = async (req, res) => {
     //verifico que no se produjo un error
     if (pasajero === 'error') { return res.status(500).json({ error: 'intente mas tarde' }) }
 
-    console.log(pasajero)
     if (pasajero.length == 0) {
         //si el pasajero no existe en base de datos lo creo
         const sql2 = 'INSERT INTO pasajeros (dni, nombre, apellido, telefono, email, fecha_nacimiento) VALUES (?, ?, ?, ?, ?, ?)'
