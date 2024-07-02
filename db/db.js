@@ -1,5 +1,7 @@
 const mysql = require('mysql2')
 
+
+
 const conection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -15,3 +17,19 @@ conection.connect((error) => {
 })
 
 module.exports = conection
+
+
+
+
+// const mysql = require('mysql2/promise');
+
+// const config = {
+//     host: 'localhost',
+//     user: 'root',
+//     password: '',
+//     database: 'cac_viajes'
+// }
+
+// const pool = mysql.createPool(config)
+
+// module.exports = pool
